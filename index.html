@@ -10,10 +10,124 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Digital Expression</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <a class="header__logo" href="#">
+  <div class="site-nav__container">
+    <nav class="site-nav">
+      <ul class="site-nav__list">
+        <li><a class="site-nav__item" href="#intro" title="">Intro</a></li>
+        <li><a class="site-nav__item" href="#services" title="">Services</a></li>
+        <li><a class="site-nav__item" href="#works" title="">Works</a></li>
+        <li><a class="site-nav__item" href="#teams" title="">Our Team</a></li>
+        <li><a class="site-nav__item" href="#testimonials" title="">Testimonials</a></li>
+        <li><a class="site-nav__item" href="#contact" title="">Contact</a></li>
+      </ul>
+      <div class="site-nav--toggle">
+        <div class="hamburger"></div>
+      </div>
+    </nav>
+  </div>
+  <header class="banner">
+    <div class="banner__animation "></div>
+    <h1 class="banner__title">Digital Expression</h1>
+    <p class="banner__content">I’M A DIGITAL DESIGNER  from Sweden living in San Francisco, where I work as a Senior Designer at Ueno. With a background in advertising, my strength lies in website and app design.
+      If you want to know more about me, my work or if youʼre a Nigerian prince who wants to offer me a lot of money, feel free to contact me on hi[at]jennyjohannesson.com.</p>
+  </header>
+  <main class="site-content">
+    <section class="section">
+        <h2 class="section__title">WEBDEVELOPMENT</h2>
+        <p class="section__content">Naszym celem od samego początku było stworzenie
+          iPhone’a, który cały będzie ekranem. Samym przeżyciem.
+          Nieprzerwanym strumieniem wrażeń. A przy tym czymś tak
+          inteligentnym, że zdolnym reagować nie tylko na Twój
+          dotyk i głos, ale nawet na przelotne spojrzenie. iPhone X
+          jest urzeczywistnieniem tej wizji. Powitaj przyszłość.</p>
+        <button class="btn btn-border btn-border-base"><span>Więcej!</span></button>
+        <div class="section-about__img">
+          <img src="img/animation.jpg" alt="">
+        </div>
+    </section>
+    <section class="section">
+        <h2 class="section__title">WEBDEVELOPMENT</h2>
+        <p class="section__content">Naszym celem od samego początku było stworzenie
+          iPhone’a, który cały będzie ekranem. Samym przeżyciem.
+          Nieprzerwanym strumieniem wrażeń. A przy tym czymś tak
+          inteligentnym, że zdolnym reagować nie tylko na Twój
+          dotyk i głos, ale nawet na przelotne spojrzenie. iPhone X
+          jest urzeczywistnieniem tej wizji. Powitaj przyszłość.</p>
+        <button class="btn btn-border btn-border-base"><span>Więcej!</span></button>
+        <div class="section-about__img">
+          <img src="img/animation.jpg" alt="">
+        </div>
+    </section>
+    <section class="section">
+        <h2 class="section__title">ANIMACJE</h2>
+        <p class="section__content">Naszym celem od samego początku było stworzenie
+          iPhone’a, który cały będzie ekranem. Samym przeżyciem.
+          Nieprzerwanym strumieniem wrażeń. A przy tym czymś tak
+          inteligentnym, że zdolnym reagować nie tylko na Twój.</p>
+      <div class="butterfly-container">
+        <div class="butterfly" id="butterfly">
+          <div class="butterfly tentacles "></div>
+          <div class="butterfly left wing"></div>
+          <div class="butterfly right wing"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <h2 class="section__title">VIDEO</h2>
+      <p class="section__content">Naszym celem od samego początku było stworzenie
+        iPhone’a, który cały będzie ekranem. Samym przeżyciem.
+        Nieprzerwanym strumieniem wrażeń. A przy tym czymś tak
+        inteligentnym, że zdolnym reagować nie tylko na Twój.</p>
+        <div>
+          <video id="goldengate" width="960" height="720" loop>
+            <source src="file:///D:/digital%20expression/StronaHTML/video/sequence.mp4" type="video/mp4">
+          </video>
+        </div>
+  </section>
+  <section class="section">
+    <h2 class="section__title">KONTAKT</h2>
+      <div class="contact-container">
+        <button class="contact__btn--show">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 382.117 382.117" style="enable-background:new 0 0 382.117 382.117;" xml:space="preserve" width="50px" height="50px">
+        <path d="M336.764,45.945H45.354C20.346,45.945,0,65.484,0,89.5v203.117c0,24.016,20.346,43.555,45.354,43.555h291.41  c25.008,0,45.353-19.539,45.353-43.555V89.5C382.117,65.484,361.772,45.945,336.764,45.945z M336.764,297.72H45.354  c-3.676,0-6.9-2.384-6.9-5.103V116.359l131.797,111.27c2.702,2.282,6.138,3.538,9.676,3.538l22.259,0.001  c3.536,0,6.974-1.257,9.677-3.539l131.803-111.274v176.264C343.664,295.336,340.439,297.72,336.764,297.72z M191.059,192.987  L62.87,84.397h256.378L191.059,192.987z" fill="#FFFFFF"/></svg>
+      </button>
+
+      <div class="contact-box">
+        <button class="contact__btn--close">
+          <span class="close-icon"></span>
+        </button>
+        <form class="contact">
+          <span class="contact__title">CONTACT US</span>
+          <div class="contact__input" data-validate="Name is required">
+            <span class="input-label">Imię</span>
+            <input class="input-text" type="text" name="name" placeholder="Przedstaw się">
+            <span class="input--focus"></span>
+          </div>
+          <div class="contact__input" data-validate="Valid email is required: ex@abc.xyz">
+            <span class="input-label">Email</span>
+            <input class="input-text" type="text" name="email" placeholder="Podaj adres email">
+            <span class="input--focus"></span>
+          </div>
+          <div class="contact__input" data-validate="Message is required">
+            <span class="input-label">Wiadomość</span>
+            <textarea class="input-text" name="message" placeholder="Jak mogę Ci pomóc?"></textarea>
+            <span class="input--focus"></span>
+          </div>
+
+          <button class="contact__btn--submit"><span>Wyślij!</span></button>
+
+        </form>
+      </div>
+
+      </div>
+  </section>
+
+  </main>
+  <footer class="footer">
+    <div class="footer__logo">
       <svg
          xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:cc="http://creativecommons.org/ns#"
@@ -115,114 +229,18 @@
           </g>
         </g>
       </svg>
-    </a>
-    <nav class="site-nav">
-      <ul class="site-nav__list">
-        <li><a class="site-nav__item" href="#intro" title="">Intro</a></li>
-        <li><a class="site-nav__item" href="#services" title="">Services</a></li>
-        <li><a class="site-nav__item" href="#works" title="">Works</a></li>
-        <li><a class="site-nav__item" href="#teams" title="">Our Team</a></li>
-        <li><a class="site-nav__item" href="#testimonials" title="">Testimonials</a></li>
-        <li><a class="site-nav__item" href="#contact" title="">Contact</a></li>
+    </div>
+    <p class="footer__description">digital Expression</p>
+    <div class="footer-nav">
+      <ul class="footer-nav__list">
+        <li><a class="footer-nav__item" href="#intro" title="">Intro</a></li>
+        <li><a class="footer-nav__item" href="#services" title="">Services</a></li>
+        <li><a class="footer-nav__item" href="#works" title="">Works</a></li>
+        <li><a class="footer-nav__item" href="#teams" title="">Our Team</a></li>
+        <li><a class="footer-nav__item" href="#testimonials" title="">Testimonials</a></li>
+        <li><a class="footer-nav__item" href="#contact" title="">Contact</a></li>
       </ul>
-      <div class="site-nav--toggle">
-        <div class="hamburger"></div>
-      </div>
-    </nav>
-  </header>
-  <main class="site-content">
-    <article class="banner">
-      <div class="banner__animation "></div>
-      <h1 class="banner__title">Digital Expression</h1>
-      <p class="banner__content">I’M A DIGITAL DESIGNER  from Sweden living in San Francisco, where I work as a Senior Designer at Ueno. With a background in advertising, my strength lies in website and app design.
-        If you want to know more about me, my work or if youʼre a Nigerian prince who wants to offer me a lot of money, feel free to contact me on hi[at]jennyjohannesson.com.</p>
-    </article>
-      <section class="section section-about">
-        <div>
-          <h2 >WEBDEVELOPMENT</h2>
-          <p>Naszym celem od samego początku było stworzenie
-            iPhone’a, który cały będzie ekranem. Samym przeżyciem.
-            Nieprzerwanym strumieniem wrażeń. A przy tym czymś tak
-            inteligentnym, że zdolnym reagować nie tylko na Twój
-            dotyk i głos, ale nawet na przelotne spojrzenie. iPhone X
-            jest urzeczywistnieniem tej wizji. Powitaj przyszłość.</p>
-          <button class="btn btn-border btn-border-base"><span>Dowiedz się więcej!</span></button>
-          <img src="img/animation.jpg" alt="">
-        </div>
-        <div>
-          <h2 >WEBDEVELOPMENT</h2>
-          <p>Naszym celem od samego początku było stworzenie
-            iPhone’a, który cały będzie ekranem. Samym przeżyciem.
-            Nieprzerwanym strumieniem wrażeń. A przy tym czymś tak
-            inteligentnym, że zdolnym reagować nie tylko na Twój
-            dotyk i głos, ale nawet na przelotne spojrzenie. iPhone X
-            jest urzeczywistnieniem tej wizji. Powitaj przyszłość.</p>
-          <button class="btn btn-border btn-border-base"><span>Dowiedz się więcej!</span></button>
-          <img src="img/animation.jpg" alt="">
-        </div>
-      </section>
-      <section class="section">
-        <div>
-          <h2>ANIMACJE</h2>
-          <p>Naszym celem od samego początku było stworzenie
-            iPhone’a, który cały będzie ekranem. Samym przeżyciem.
-            Nieprzerwanym strumieniem wrażeń. A przy tym czymś tak
-            inteligentnym, że zdolnym reagować nie tylko na Twój.</p>
-        </div>
-        <div class="butterfly-container">
-          <div id="butterfly">
-            <div class="butterfly tentacles "></div>
-            <div class="butterfly left wing"></div>
-            <div class="butterfly right wing"></div>
-          </div>
-        </div>
-    <div>
-      <div>
-        <div>
-          <h2>VIDEO</h2>
-          <p>Naszym celem od samego początku było stworzenie
-            iPhone’a, który cały będzie ekranem. Samym przeżyciem.
-            Nieprzerwanym strumieniem wrażeń. A przy tym czymś tak
-            inteligentnym, że zdolnym reagować nie tylko na Twój.</p>
-        </div>
-      </div>
-      <div>
-        <div >
-          <video id="goldengate" width="960" height="720" loop>
-            <source src="file:///D:/digital%20expression/StronaHTML/video/sequence.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
     </div>
-  </section>
-  <section class="section">
-      <div>
-        <h2>Portfolio</h2>
-      </div>
-  </section>
-<section class="section">
-    <div class="contact">
-      <h2>kontakt</h2>
-      <button class="contact__btn--show">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 382.117 382.117" style="enable-background:new 0 0 382.117 382.117;" xml:space="preserve" width="50px" height="50px">
-      <path d="M336.764,45.945H45.354C20.346,45.945,0,65.484,0,89.5v203.117c0,24.016,20.346,43.555,45.354,43.555h291.41  c25.008,0,45.353-19.539,45.353-43.555V89.5C382.117,65.484,361.772,45.945,336.764,45.945z M336.764,297.72H45.354  c-3.676,0-6.9-2.384-6.9-5.103V116.359l131.797,111.27c2.702,2.282,6.138,3.538,9.676,3.538l22.259,0.001  c3.536,0,6.974-1.257,9.677-3.539l131.803-111.274v176.264C343.664,295.336,340.439,297.72,336.764,297.72z M191.059,192.987  L62.87,84.397h256.378L191.059,192.987z" fill="#FFFFFF"/></svg>
-    </button>
-    <button class="contact__btn--close">
-
-    </button>
-      <form >
-        <input name="name" type="text" placeholder="Your Name" required>
-        <input name="email" type="text" placeholder="Your Email" required>
-        <textarea name="message" type="text" placeholder="Message" required>
-        </textarea>
-        <button class=""><span>Wyślij!</span></button>
-
-      </form>
-    </div>
-</section>
-
-  </main>
-  <footer>
     <script src="js/main.js"></script>
   </footer>
 </body>

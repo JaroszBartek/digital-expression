@@ -1,21 +1,52 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   padding: 0;
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   color: $gray;
+  letter-spacing: 1px;
+  line-height: 1.5;
 }
+
 img{
   max-width: 100%;
   height: auto;
 }
+
 video {
   max-width: 100%;
   height: auto;
 }
 
+
+button {
+	outline: none;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.site-content {
+  max-width: 1020px;
+  margin:auto;
+}
 .section {
   padding: 30px;
+  .section__title {
+    color: $dark;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: 900;
+    margin: 30px 0;
+  }
+  .section__content {
+    margin-bottom: 40px;
+  }
+
 }

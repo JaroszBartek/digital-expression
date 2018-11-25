@@ -2,10 +2,12 @@
 @import 'base/variables';
 @import 'base/normalize';
 @import 'base/layout';
+@import 'base/buttons';
+@import 'base/mixins';
 
 
 @import 'components/site-nav';
-@import 'components/banner';
-@import 'components/buttons';
+@import 'components/header';
 @import 'components/butterfly-animation';
 @import 'components/contact';
+@import 'components/footer';
