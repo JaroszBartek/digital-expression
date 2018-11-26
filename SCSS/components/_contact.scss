@@ -41,13 +41,14 @@ textarea::-webkit-input-placeholder {
 textarea:-moz-placeholder {
   color: #555555;
 }
-textarea::-moz-placeholder {
-  color: #555555;
-}
 textarea:-ms-input-placeholder {
   color: #555555;
 }
 
+.section-contact__item {
+	max-width: 600px;
+	margin:auto;
+}
 .contact-container {
   width: 100%;
   display: flex;

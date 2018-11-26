@@ -1,0 +1,37 @@
+.box-shadow--big{
+  position:relative;
+  &::before {
+    content: '';
+    display: none;
+  }
+}
+
+@include tablet-portrait {
+  .box-shadow--big{
+    &::before {
+      display:block;
+      position:absolute;
+      box-shadow:10px 10px 20px #b7b6b6a6;
+      width: 100vw;
+      height: calc(100% + 350px);
+      top: 0;
+      left:-2vw;
+      z-index: -20;
+    }
+  }
+}
+
+@include tablet-landscape {
+  .section-about__item {
+    box-sizing: border-box;
+    max-width: 50%;
+    padding: 10px;
+  }
+
+.box-shadow--big{
+  &::before {
+    left:-50vw;
+    height: calc(100% + 200px);
+  }
+}
+}

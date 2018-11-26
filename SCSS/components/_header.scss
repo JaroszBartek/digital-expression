@@ -21,8 +21,9 @@
     letter-spacing: 4px;
   }
   .banner__content {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1.5;
+    max-width: 800px;
   }
 }
 
@@ -30,6 +31,12 @@
   .banner {
     .banner__animation{
       margin-top: 50px;
+    }
+    .banner__title{
+      font-size: 4.5rem;
+    }
+    .banner__content {
+      font-size: 2rem;
     }
   }
 }
