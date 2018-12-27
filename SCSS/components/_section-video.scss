@@ -1,0 +1,26 @@
+.section-video__item {
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  .ink-splash {
+    box-shadow: 10px 10px 40px #b7b6b6a6;
+  }
+}
+
+@include tablet-landscape {
+  .section-video__item {
+    width: 80%;
+    .ink-splash {
+      width: 40%;
+    }
+    .video-content-wrapper {
+      margin-left: 45%;
+      .section__title {
+        margin: 0;
+      }
+      .section__content {
+        margin: 0;
+      }
+    }
+  }
+}

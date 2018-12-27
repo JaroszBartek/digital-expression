@@ -1,8 +1,9 @@
 .footer {
-  background-color: #2f2f2f;
-  color: #ffffff;
+  border-top: 1px solid $underscores;
+  margin: 40px;
+  padding-top: 20px;
+  color: $dark;
   box-sizing: border-box;
-  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,27 +11,35 @@
 
   .footer__logo {
     display: block;
-    height: 30px;
-    width: 80px;
-    .svg{
+    width: 150px;
+    .svg {
       max-height: 100%;
-      fill: #FFFFFF;
+      fill: #000000;
     }
   }
   .footer-nav {
-
+    margin-top: 30px;
     .footer-nav__list {
-
       width: 100%;
       list-style: none;
       text-align: center;
-      line-height: 1.5;
+      line-height: 2;
       padding: 0;
       margin: 0;
+      @include tablet-portrait {
+        display: flex;
+      }
     .footer-nav__item {
       font-size: 2rem;
-      color: #FFFFFF;
+      padding: 10px 20px;
+      color: $dark;
       text-decoration: none;
+      &:hover,
+      &:focus,
+      &:active {
+        border-bottom: 2px solid $red;
+      }
+
     }
   }
   }

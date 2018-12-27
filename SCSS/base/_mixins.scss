@@ -13,3 +13,27 @@
 @mixin big-desktop {
   @media (min-width: 1800px) { @content; }
 }
+
+@mixin li-loop {
+  $elements: 6;
+  @for $i from 0 to $elements {
+  li:nth-child(#{$i + 1})
+  { transition-delay: .3s + (0.03 * $i);}
+  }
+}
+
+@mixin develop-animation {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 2px solid $red;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}

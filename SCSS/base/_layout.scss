@@ -4,10 +4,15 @@ html {
 
 body {
   padding: 0;
+  font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
   color: $gray;
   letter-spacing: 2px;
   line-height: 1.5;
+}
+body.nav-opened {
+  overflow: hidden;
+  height: 100vh;
 }
 
 img{
@@ -30,8 +35,11 @@ button:hover {
 	cursor: pointer;
 }
 
+.site-content {
+  margin: 0 20px;
+}
 .section {
-  padding: 30px;
+  padding: 0 30px;
   display: flex;
   flex-direction: column;
   .section__title {
@@ -40,27 +48,50 @@ button:hover {
     letter-spacing: 2px;
     font-weight: 900;
     margin: 30px 0;
-    text-align: center;
+    &::before {
+      content: "";
+      position:absolute;
+      width: 100px;
+      height: 5px;
+      background: linear-gradient(90deg, rgba(239,104,100,0.7) 0%, rgba(255,255,255,0.9) 100%);
+    }
   }
   .section__content {
     margin-bottom: 40px;
-    text-align: center;
     font-size: 1.8rem;
   }
 }
+
+@media (max-width: 900px) {
+  .first {
+    order: 1;
+  }
+  .second {
+    order: 2;
+  }
+}
+
+
 @include tablet-landscape {
-  
   .section {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     .section__title {
-      font-size: 4rem;
+      font-size: 3.5rem;
+      width: 70%;
+      margin: 30px auto;
     }
     .section__content {
-      width: 90%;
+      width: 70%;
       margin: 40px auto;
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
+  }
+}
+
+@include desktop {
+  .site-content {
+    margin: 500px 30px 0;
   }
 }

@@ -15,6 +15,17 @@
     position: sticky;
   }
 
+  .banner__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 600px;
+    @include desktop {
+      max-width: 800px;
+      margin-left: 30px;
+    }
+  }
+
   .banner__animation{
     height: 200px;
     background-image: url(img/chalk_logo.png);
@@ -36,14 +47,11 @@
     color: #ffffff;
     letter-spacing: 4px;
   }
-  .banner__content {
+  .banner__text {
     color: #c1c1c1;
     font-size: 1.6rem;
     line-height: 1.5;
-    max-width: 600px;
-    @include desktop {
-      max-width: 800px;
-    }
+
   }
 }
 
