@@ -45,16 +45,35 @@ textarea:-ms-input-placeholder {
   color: #555555;
 }
 
+
 .section-contact__item {
 	margin: 30px auto;
 	.section__title {
 		margin: 20px 0;
 	}
 	.section__content {
-		margin: 0;
+		margin:0;
 		line-height: 3;
 	}
 }
+
+  @include tablet-landscape {
+		.section-contact {
+			max-width: 60%;
+			margin:30px auto;
+		}
+	 .section-contact__item {
+		 width: 50%;
+		.section__title {
+	 	margin: 20px auto;
+	 	}
+		.section__content {
+			margin: auto;
+			line-height: 3;
+		}
+	 }
+	}
+
 .contact-container {
   width: 100%;
   display: flex;

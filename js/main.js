@@ -6,6 +6,12 @@ let navFunctions = function (event) {
 let hamburger = document.querySelector (".site-nav--toggle");
 hamburger.addEventListener("click", navFunctions, false);
 
+let navLink = document.querySelectorAll (".site-nav__item");
+  for (let i=0; i < navLink.length; i++) {
+    navLink[i].addEventListener("click", navFunctions, false);
+  };
+
+
 // show/hide contact
 let contactShow = document.querySelector (".contact__btn--show");
 contactShow.addEventListener("click", function() {
@@ -72,7 +78,7 @@ let animationTrigger = function () {
           "is-active"
         );
       }
-  
+
     }
   }
   return {
