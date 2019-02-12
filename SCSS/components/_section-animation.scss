@@ -5,6 +5,16 @@
   top: 30px;
   margin: 0px auto;
 }
+@include tablet-portrait {
+  .butterfly-container {
+    margin: 200px auto 0;
+  }
+}
+@include tablet-landscape {
+  .butterfly-container {
+    margin: 0px auto;
+  }
+}
 
 #butterfly {
   position: relative;

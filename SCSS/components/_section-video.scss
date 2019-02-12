@@ -4,6 +4,7 @@
   flex-direction: column;
   .ink-splash {
     box-shadow: 10px 10px 40px #b7b6b6a6;
+    margin:auto;
   }
 }
 
@@ -12,6 +13,7 @@
     width: 80%;
     .ink-splash {
       width: 40%;
+      margin: 0;
     }
     .video-content-wrapper {
       margin-left: 45%;

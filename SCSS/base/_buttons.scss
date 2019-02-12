@@ -4,27 +4,34 @@ z-index: 1;
 display: inline-block;
 vertical-align: middle;
 margin-top: 16px;
-margin-bottom: 30px;
 padding: 14px 18px;
 text-decoration: none;
 color: $red;
-font-size: 1.6rem;
+font-size: 16px;
 font-weight: 900;
 letter-spacing: 1px;
+outline: none;
 overflow: hidden;
+border: none;
+background: none;
 left: 50%;
+-webkit-transform: translate(-50%, 0);
 transform: translate(-50%, 0);
+-webkit-transition: all .1s;
 transition: all .1s;
+}
+.btn:hover{
+font-size: 17px;
 }
 
 .btn-border::before, .btn-border::after {
-content: '';
 position: absolute;
 width: 100%;
 height: 2px;
 background-color: $red;
+-webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
 transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
-
+content: "";
 }
 .btn-border::before {
 left: 0;
@@ -39,8 +46,9 @@ position: absolute;
 width: 2px;
 height: 100%;
 background-color: $red;
+-webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
 transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
-content: '';
+content: "";
 }
 .btn-border span::before {
 left: 0;
@@ -51,11 +59,9 @@ right: 0;
 bottom: 0;
 }
 
-.btn-border-base:hover::before, .btn-border-base:hover::after,
-.btn-border-base:active::before, .btn-border-base:active::after {
+.btn-border__base:hover::before, .btn-border__base:hover::after {
 width: 12px;
 }
-.btn-border-base:hover span::before, .btn-border-base:hover span::after,
-.btn-border-base:active span::before, .btn-border-base:active span::after {
+.btn-border__base:hover span::before, .btn-border__base:hover span::after {
 height: 12px;
 }

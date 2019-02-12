@@ -3,14 +3,14 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
+<html class="no-js" lang="pl-PL">
 <head>
 <meta charset="utf-8">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Digital Expression</title>
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
 </head>
 <body>
   <div class="site-nav__container">
@@ -19,12 +19,12 @@
     </div>
     <nav class="site-nav">
       <ul class="site-nav__list">
-        <li><a class="site-nav__item" href="#home" title="">Start</a></li>
-        <li><a class="site-nav__item" href="#design" title="">Projektowanie</a></li>
-        <li><a class="site-nav__item" href="#code" title="">Kod</a></li>
-        <li><a class="site-nav__item" href="#animations" title="">Animacje</a></li>
-        <li><a class="site-nav__item" href="#video" title="">Video</a></li>
-        <li><a class="site-nav__item" href="#contact" title="">Kontakt</a></li>
+        <li><a class="site-nav__item" href="#home" title="Start">Start</a></li>
+        <li><a class="site-nav__item" href="#design" title="Projektowanie">Projektowanie</a></li>
+        <li><a class="site-nav__item" href="#code" title="Kod">Kod</a></li>
+        <li><a class="site-nav__item" href="#animations" title="Animacje">Animacje</a></li>
+        <li><a class="site-nav__item" href="#video" title="Video">Video</a></li>
+        <li><a class="site-nav__item" href="#contact" title="Kontakt">Kontakt</a></li>
       </ul>
     </nav>
   </div>
@@ -44,17 +44,17 @@
   <main class="site-content">
     <div class="box-shadow--big">
       <section id="design" class="section">
-        <div class="section-about__item">
+        <div class="section-design__item">
           <h2 class="section__title">PROJEKTOWANIE</h2>
           <p class="section__content">
             Znam podstawy projektowania interfejsów witryn internetowych oraz grafiki
-             wektorowej i rastrowej.  Potrafię obsługiwać Adobe Experience Design XD,
-            Adobe Photoshop, Adobe Ilustrator.
+            wektorowej i rastrowej. Potrafię obsługiwać Adobe Experience Design XD,
+            Adobe Photoshop i Adobe Ilustrator.
             Między innymi ta strona oraz moje CV zostały od podstaw zaprojektowane
             przeze mnie.
           </p>
         </div>
-        <div class="section-about__item box-shadow--small">
+        <div class="section-design__item box-shadow--small">
           <div class="design-animation not-active">
             <svg viewBox="0 0 210 297">
               <g class="design-animation__svg">
@@ -118,7 +118,7 @@
         </div>
       </section>
       <section id="code" class="section">
-        <div class="section-about__item second">
+        <div class="section-code__item second">
           <div class="develop-animation not-active">
             <p>&lt!doctype html&gt</p>
             <p>&lthtml&gt</p>
@@ -130,13 +130,13 @@
             <p>&ltbody&gt</p>
           </div>
         </div>
-        <div class="section-about__item first">
+        <div class="section-code__item first">
           <h2 class="section__title">KOD</h2>
           <p class="section__content">
             W projektach wykorzystuję głównie HTML, CSS i JavaScript. Dbam, aby kod był
-             czytelny i semantyczny, a strony wyświetlały się poprawnie na wszystkich
-             urządzeniach. Dodatkowe narzędzia, które ułatwiają mi życie: SCSS, Git,
-             Wordpress. Obecnie uczę się Reacta.</p>
+            czytelny i semantyczny, a strony wyświetlały się poprawnie na wszystkich
+            urządzeniach. Dodatkowe narzędzia, które ułatwiają mi życie: SCSS, Git,
+            Wordpress. Obecnie uczę się Reacta.</p>
         </div>
       </section>
     </div>
@@ -153,10 +153,10 @@
           <h2 class="section__title">ANIMACJE</h2>
           <p class="section__content">
             Animacje przyciągają uwagę i pozwalają poprawić czytelność strony.
-            Mikrointerakcje zaskakują oraz zachęcają do wykonania określonych czynności.
-             Do tworzenia animacji wykorzystuję głownie CSS, SVG i/lub JavaScript,
-             chodź potrafię wykonać bardziej złożone rzeczy w plikach wideo przy pomocy
-             Adobe After Effects. </p>
+            Mikro-interakcje zaskakują oraz zachęcają do wykonania określonych czynności.
+            Do tworzenia animacji wykorzystuję głownie CSS, SVG i/lub JavaScript,
+            chodź potrafię wykonać bardziej złożone rzeczy w plikach wideo przy pomocy
+            Adobe After Effects. </p>
         </div>
       </div>
     </section>
@@ -170,10 +170,16 @@
         <p class="section__content">
           Filmy to najlepszy sposób aby opowiedzieć historię i zatrzymać na dłużej
           użytkowników, którzy nie chcą zagłębiać się w treść. Od ponad dwóch lat
-           tworzę materiały wideo, będąc odpowiedzialnym za każdy etap, od operowania
-            kamerą po montaż i postprodukcję.</p>
+          tworzę materiały wideo, będąc odpowiedzialnym za każdy etap, od operowania
+          kamerą po montaż i postprodukcję.</p>
         </div>
       </div>
+  </section>
+  <section class="section">
+    <div class="section-cv__item">
+      <h3 class="cv__title">CV</h3>
+      <button href="#" class="btn btn-border btn-border__base"><span>więcej!</span></button>
+    </div>
   </section>
   <section id="contact" class="section section-contact">
     <div class="section-contact__item">
@@ -210,7 +216,7 @@
               <textarea class="input-text" name="message" placeholder="Jak mogę Ci pomóc?"></textarea>
               <span class="input--focus"></span>
             </div>
-            <button class="contact__btn--submit"><span>Wyślij!</span></button>
+            <button class="contact__btn--submit">Wyślij!</button>
           </form>
         </div>
       </div>

@@ -1,103 +1,12 @@
-.box-shadow--big{
-  position:relative;
-  &::before {
-    content: '';
-    display: none;
-  }
-}
-
-.box-shadow--small {
-  position: relative;
-  &::before {
-    content: "";
-    display: none;
-  }
-}
-
-@include tablet-portrait {
-  .box-shadow--big{
-    &::before {
-      display:block;
-      position:absolute;
-      box-shadow:10px 10px 40px #b7b6b6a6;
-      width: 100vw;
-      height: calc(100% + 350px);
-      top: 0;
-      left:-2vw;
-      z-index: -20;
-    }
-  }
-  .box-shadow--small {
-    position: relative;
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      height: calc(100% + 100px);
-      width: calc(100% - 35px);
-      box-shadow:10px 10px 40px #b7b6b6a6;
-      right: 0;
-      bottom: 0;
-      z-index: -50;
-    }
-  }
-}
-
-.section-about__item {
+.section-code__item {
   margin: 30px 0;
 }
 
 @include tablet-landscape {
-  .section-about__item {
+  .section-code__item {
     box-sizing: border-box;
     width: 50%;
     padding: 50px 40px 50px 20px;
-  }
-
-.box-shadow--big{
-  &::before {
-    left:-50vw;
-    height: calc(100% + 200px);
-    }
-  }
-}
-
-.design-animation {
-  max-width: 250px;
-  margin: 20px auto;
-  display: block;
-}
-  .not-active .design-animation__svg {
-    opacity: 0;
-    fill-opacity: none;
-    stroke: none;
-  }
-  .is-active .design-animation__svg   {
-    stroke: #000000;
-    stroke-width: 1px;
-    fill: #000000;
-    fill-opacity: 1;
-    stroke-dasharray: 450;
-    opacity: 1;
-    animation: webdesign 2s ease-in-out;
-  }
-@keyframes webdesign {
-  0% {
-    opacity: 0;
-    fill-opacity: 0;
-    stroke-dashoffset: 450;
-  }
-  50% {
-    fill-opacity: 0;
-    stroke-dashoffset: 450;
-  }
-  70% {
-    fill-opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    fill-opacity: 1;
-    stroke-dashoffset: 0;
   }
 }
 
@@ -144,21 +53,21 @@
     animation-fill-mode: forwards;
   }
   &:nth-child(4) {
-    width: 24rem;
+    width: 25rem;
     opacity: 0;
     animation: type4 1.2s steps(30, end);
     animation-delay: 2.2s;
     animation-fill-mode: forwards;
   }
   &:nth-child(5) {
-    width: 25rem;
+    width: 27rem;
     opacity: 0;
     animation: type5 1.2s steps(30, end);
     animation-delay: 3.4s;
     animation-fill-mode: forwards;
   }
   &:nth-child(6) {
-    width: 28rem;
+    width: 29rem;
     opacity: 0;
     animation: type6 1.2s steps(30, end);
     animation-delay: 4.6s;

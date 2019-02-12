@@ -36,6 +36,64 @@ button:hover {
 	cursor: pointer;
 }
 
+.box-shadow--big{
+  position:relative;
+  &::before {
+    content: '';
+    display: none;
+  }
+}
+
+.box-shadow--small {
+  position: relative;
+  &::before {
+    content: "";
+    display: none;
+  }
+}
+
+@include tablet-portrait {
+  .box-shadow--big{
+    &::before {
+      display:block;
+      position:absolute;
+      box-shadow:10px 10px 40px #b7b6b6a6;
+      width: 100vw;
+      height: calc(100% + 450px);
+      top: 0;
+      left:-2vw;
+      z-index: -20;
+    }
+  }
+  .box-shadow--small {
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: calc(100% + 40px);
+      width: calc(100% - 35px);
+      box-shadow:10px 10px 40px #b7b6b6a6;
+      right: 0;
+      bottom: 0;
+      z-index: -50;
+    }
+  }
+}
+@include tablet-landscape {
+  .box-shadow--big{
+    &::before {
+      left:-50vw;
+      height: calc(100% + 200px);
+      }
+    }
+  .box-shadow--small {
+    &::before {
+      height: calc(100% + 100px);
+    }
+  }
+}
+
 .site-content {
   margin: 0 20px;
 }
@@ -47,11 +105,12 @@ button:hover {
     color: $dark;
     font-size: 2.5rem;
     letter-spacing: 2px;
-    font-weight: 900;
+    font-weight: bold;
     margin: 30px 0;
     &::before {
       content: "";
-      position:absolute;
+      display: block;
+      margin-bottom: 5px;
       width: 100px;
       height: 5px;
       background: linear-gradient(90deg, rgba(239,104,100,0.7) 0%, rgba(255,255,255,0.9) 100%);
