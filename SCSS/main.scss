@@ -1,16 +1,19 @@
 
-@import 'base/variables';
-@import 'base/mixins';
-@import 'base/normalize';
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/normalize';
+
 @import 'base/layout';
-@import 'base/buttons';
+
 
 @import 'components/site-nav';
 @import 'components/banner';
-@import 'components/section-design';
-@import 'components/section-code';
-@import 'components/section-animation';
-@import 'components/section-video';
-@import 'components/section-cv';
-@import 'components/section-contact';
+@import 'components/buttons';
 @import 'components/footer';
+
+@import 'sections/design';
+@import 'sections/code';
+@import 'sections/animation';
+@import 'sections/video';
+@import 'sections/cv';
+@import 'sections/contact';
